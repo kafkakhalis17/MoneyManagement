@@ -1,0 +1,101 @@
+body, html{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    background-color: rgb(10, 136, 219);
+    height: 120px;
+}
+
+header span{
+    color: white;
+    font-size: 27px;
+    font-weight:bold; 
+    display: inline-block !important;
+    padding: 49px 10px;
+}
+
+header nav {
+   right: 12px;
+    position: absolute;
+    top: 60px;  
+}
+
+
+header nav ul li{
+    float: left;
+    list-style: none;
+    padding: 10px;
+}
+header nav ul li a{
+    color: #fff;
+    text-decoration: none;  
+    font-size: 21px;
+}
+
+.container{
+
+    margin: 0px auto;
+    position: relative;
+}
+
+.box{
+    padding: 20px;
+    width: 320px;
+    height: 320px;
+    position: absolute;
+    box-shadow: 1px 1px 12px grey;
+    border-radius: 9px; 
+}
+
+.data-table{
+    position: absolute;
+    top: 420px;
+    width: 100%;
+    overflow: auto;
+}
+
+
+/* Section */
+.box-cari{
+    top: 20px;
+    right: 0px;
+}
+
+.box .box-head{
+   border-bottom: 2px darkgrey solid;
+    padding: 6px;  
+}
+.box .box-head span{
+    padding: 12px;
+}
+.box .box-section{
+    margin: 21px 10px;
+}
+
+.table-cari{
+    width: 100%;
+}
+
+.table-cari tr .col-cari{
+    float: right;
+}
+
+.butt-cari{
+    width: 60px;
+    height: 30px;
+    background-color: rgb(5, 145, 238);
+    color: #fff;
+    border: 0px;
+}       
+
+
+
+footer{
+    background-color: rgb(5, 145, 238);
+    width: 100%;
+    height: 40px;
+}
