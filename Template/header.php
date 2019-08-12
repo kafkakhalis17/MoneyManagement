@@ -17,8 +17,8 @@
         <span>Pembayaran Khas</span>
         <nav>
             <ul>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">Dashboard</a></li>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">Pembayaran</a></li>
+                <li><a href="http://localhost/MoneyManagement/" target="_blank" rel="noopener noreferrer">Dashboard</a></li>
+                <li><a href="http://localhost/MoneyManagement/v_pembayaran.php" target="_blank" rel="noopener noreferrer">Pembayaran</a></li>
                 <li><a href="http://" target="_blank" rel="noopener noreferrer">Master Data</a></li>
                 <li><a href="http://" target="_blank" rel="noopener noreferrer">Laporan</a></li>
             </ul>
