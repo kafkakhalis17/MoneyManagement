@@ -29,8 +29,10 @@ a{
     transform: rotate(90deg);
 }
 .page-title{
+    position: relative;
     color: #ffc400;
     float: left;
+    padding: 10px;
     font-weight: bolder;
     font-size: 40px;
 }
@@ -117,6 +119,15 @@ nav{
 
 .Nav-Dashboard:hover::before   {
     background-image: url("Dashboard-yellow.svg");
+  
+}
+
+.Nav-Pay::before{
+    background-image: url("money-white.svg");
+   
+}
+.Nav-Pay:hover::before   {
+    background-image: url("money-yellow.svg");
   
 }
 
@@ -236,16 +247,19 @@ header nav ul li .link{
 }
 /* BOX MENU */
 .box-container{
+    display: grid;
     position: relative;
     top: 120px;
-    left: 50px;
+    left: -125px;
+    grid-template-columns: auto auto auto auto;
+    
 }
 
 .box{
+    grid-gap: 90px;
     padding: 20px;
     width: 150px;
-    height: 150px;
-    position: absolute;
+    height: 150px;  
     box-shadow: 0px 0px 34px -7px rgb(199, 199, 199);
     border-radius: 9px; 
     transition: 0.8s;
@@ -254,29 +268,42 @@ header nav ul li .link{
     padding: 20px;
     width: 150px;
     height: 150px;
-    position: absolute;
     box-shadow: 13px 12px 30px 0px rgb(192, 192, 192);
     border-radius: 9px; 
 }
 
-.box-person{
+.box-grid{
     overflow: hidden;
 }
 
 
-.box-iconperson{
+
+
+.box-icon{
   position: relative;
-  width: 60px;
   margin: 6px auto;
+  width: 60px;
 }
+.box-icon img{
+    width: 60px;
+  }
+
+
 
 .box-title{
+    font-size: 16px;
     text-align: center;
     position: relative;
     top: 17px;
-    color:rgb(77, 77, 77);
+    color:rgb(88, 88, 88);
+    font-weight: bold;
 }
 
+.form-container{
+    top:120px;
+    left: 30px;
+    position: absolute;
+}
 
 .tableData{
     position: absolute;
@@ -286,15 +313,64 @@ header nav ul li .link{
     overflow: auto;
 
 }
+.tpembayaran-container{
+    position: relative;
+    top: 80px;
+    left: 30px;
+}
+.table-form-container{
+    position: relative;
+    width: 100%;
+    top: 360px;
+    left: 30px;
+    
+}
 
+.form-hide{
+    display: none;
+}
 .data-table{
     top: 520px;
     overflow-x: auto;
     position: relative;
 }
 
+/* MASterData */
+.container-Data{
+    position: relative;
+    top: 200px;
+    left: 30px;
+    width: 800px;
+    margin: 0px auto;
 
+}
 
+.Table-form{
+    width: 100%;
+    
+}
+.form-bayar{
+    position: absolute ;
+    top: 90px;
+    left: 30px;
+}
+.form-bayar tr td{
+    padding: 10px;
+}
+#select-nama{
+    width: 100% !important;
+}
+
+.tab-gen tr td{
+   padding: 10px;
+}
+.tab-gen tr td .radio-btn{
+    margin-left: 10px;
+}
+
+.modal-table tr td{
+    padding: 10px;
+}
 /* Button */
 .button-container{
     position: relative;

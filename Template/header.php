@@ -10,11 +10,15 @@
     <link rel="stylesheet" href="assets/vendor/datatables.min.css">
     <link rel="stylesheet" href="assets/vendor/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="assets/vendor/bootstrap.css">
+    <link rel="stylesheet" href="assets/vendor/chosen-js/chosen.min.css">
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
     <script src="assets/vendor/bootstrap/bootstrap.js"></script>
-  
     <script src="assets/vendor/datatables.min.js"></script>
+    <script src="assets/vendor/chosen-js/chosen.jquery.min.js"></script>
+    <script src="backup/form.json"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.9/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.9/js/select2.min.js"></script>
 </head>
 
 <body>
@@ -54,8 +58,8 @@
                 <ul>
                     <li class="Nav-btn Nav-Dashboard"><span onclick="Page('Dashboard')">Dashboard</span></li>
                     <li class="Nav-btn Nav-Data" ><span onclick="Page('MasterData')">MasterData</span></li>
-                    <li>Pembayaran</li>
-                    <li>Report</li>
+                    <li class="Nav-btn Nav-Pay"><span onclick="Page('v_pembayaran')">Pembayaran</span></li>
+                    <!-- <li>Report</li> -->
                 </ul>
             </div>
         </div>

@@ -1,8 +1,9 @@
 <div class="page page-hide" id="MasterMember" visibility="close">
-    <?php include 'Template/modal/modal-siswa.php';?>
+    <?php include 'Template/modal/modal-inputMember.php';?>
+    <?php include 'Template/modal/modal-upMember.php';?>
     <span class="page-title">Data Siswa</span>
     <div class="button-container">
-        <button data-toggle="modal" data-target="#exampleModal" class="btn btn-input">Input</button>
+        <button data-toggle="modal" data-target="#inputMember" class="btn btn-input">Input</button>
     </div>
     <div class="tableData">
         <table id="DataSiswa">
@@ -12,6 +13,7 @@
                     <td>Nama</td>
                     <td>Kelas</td>
                     <td>Jurusan</td>
+                    <td>Action</td>
                 </tr>
             </thead>
 
@@ -25,6 +27,8 @@
                     <td><?php echo $d['NamaSiswa']; ?></td>
                     <td><?php echo $d['Kelas']; ?></td>
                     <td><?php echo $d['Jurusan']; ?></td>
+                    <td><button data-toggle="modal" data-target="#UpMember<?php echo $d['NIS']; ?>" class="btn btn-warning">Update</button>
+                    <a class="btn-danger btn" href="Backend/DeleteMember.php?id=<?php echo $d['NIS']; ?> ">Delete</a></td>
                 </tr>
 
                 <?php 

@@ -10,7 +10,7 @@
 
         mysqli_query($koneksi,"INSERT INTO Siswa VALUES ('$nis','$nama','$kelas','$jurusan')");
 
-        // header("location:/MoneyManagement1/M_Siswa.php");
+        header("location:/MoneyManagement1?page=MasterMember");
     }
    
     
