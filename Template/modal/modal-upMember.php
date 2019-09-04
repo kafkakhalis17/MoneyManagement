@@ -15,6 +15,7 @@
       <div class="modal-body">
         <form action="Backend/Siswa.php" method="post">
           <table class="modal-table">
+          <input autocomplete="off" type="hidden" name="nis" value="<?php echo $d['NIS']; ?>">
             <tr>
               <td><label>Nama Siswa</label></td>
               <td><input autocomplete="off" type="text" name="nama"></td>
@@ -46,7 +47,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <input class="btn btn-input" name="update" type="submit" value="Tambah">
+        <input class="btn btn-input" name="update" type="submit" value="Update">
       </div>
       </form>
     </div>

@@ -1,9 +1,9 @@
 <?php
-    // include 'init.php'; 
+    include 'init.php'; 
 
-    function GetTableDashboard($koneksi)
+    function getCards($koneksi)
     {
-        $sql = "SELECT * FROM V_Pembayaran";
+        $sql = "SELECT * FROM totalmasuk";
         $Data =mysqli_query($koneksi,$sql);
         return $Data;
     }

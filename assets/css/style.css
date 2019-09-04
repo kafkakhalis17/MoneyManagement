@@ -36,6 +36,14 @@ a{
     font-weight: bolder;
     font-size: 40px;
 }
+.clock-container{
+    border-radius: 10px;
+    position: absolute;
+    right: 110px;
+    top: 20px;
+    background-color: #ffd900;
+    padding: 10px 20px;
+}
 
 nav{
     border-top-right-radius: 16px;
@@ -86,6 +94,9 @@ nav{
     font-size: 17px;
     color: #fff;
     font-weight: bold;
+}
+.Nav-btn{
+    cursor: pointer;
 }
 .Nav-btn::before{
     background-size: 15px;
@@ -211,7 +222,7 @@ header nav ul li .link{
     top: 0px;
     width: 900px;
     left: 280px;
-    position: absolute;
+    position: relative;
 
 }
 
@@ -246,17 +257,73 @@ header nav ul li .link{
     background-color: white
 }
 /* BOX MENU */
+.status{
+    position: relative;
+    top: 130px;
+    left: 30px;
+}
+.grid-title{
+    padding: 18px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.number{
+    font-size: 46px;
+    margin: 9px auto;
+    
+}
+/* Dashboard grid */
+.grid-status{
+    width: auto;
+    height: 220px;
+    position: relative;
+    top: 10px;
+    left: 30px;
+    overflow: hidden;
+    z-index: 100;
+    
+}
+.grid-status-child{
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-flow: column; 
+    position: absolute;
+    width:100%;
+    padding:20px;
+    float: left;
+    overflow-x:scroll;
+    box-sizing: content-box;
+  
+}
+.box-num{
+    margin: 10px auto;
+    text-align: center; 
+    
+  }
+.box-icon img{
+    width: 60px;
+}
+.box-status{
+    position: static !important; 
+    float: left;
+    width: 150px !important ;
+    height: 150px !important;
+    margin-left: 50px;
+    
+}
+
+
 .box-container{
     display: grid;
     position: relative;
     top: 120px;
-    left: -125px;
+    left: -168px;
     grid-template-columns: auto auto auto auto;
     
 }
 
 .box{
-    grid-gap: 90px;
     padding: 20px;
     width: 150px;
     height: 150px;  
@@ -284,9 +351,6 @@ header nav ul li .link{
   margin: 6px auto;
   width: 60px;
 }
-.box-icon img{
-    width: 60px;
-  }
 
 
 

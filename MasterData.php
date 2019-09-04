@@ -30,11 +30,6 @@
     </div>
     
     <div class="container-Data">
-    <?php
-        $json =formget($koneksi);
-        $file = 'backup/form.json';
-        file_put_contents($file,$json);
-    ?>
         <table class="Table-form dataTable">
             <thead>
                 <tr>

@@ -1,4 +1,12 @@
 $(document).ready(function(){
+    $("#DataSiswa").DataTable();
+    $(".DataTable").DataTable();
+    $(".Data-Form").DataTable(
+        {
+            "scrollX": true
+        }
+    )
+
     
     function getUrlParameter(sParam) {
         var sPageURL = window.location.search.substring(1),
@@ -16,23 +24,35 @@ $(document).ready(function(){
     };
     form = getUrlParameter('form');
     urlParameter = getUrlParameter('page');
-    Page(urlParameter,form);
+    if (getUrlParameter('alert')=='alert') {
+        swal({
+            title: "Good job!",
+            text: "You clicked the button!",
+            icon: "success",
+          });
+
+          
+    }
+    // Page(urlParameter,form);
 
     // if ($(window).width() > 1366){
     //     $(".container").css("width","1448");
     // }
     // else $(".container").css("width","1270");
-    $(".select-nama").select2();
-    $("#DataSiswa").DataTable();
-    $(".DataTable").DataTable();
-    $(".Data-Form").DataTable(
-        {
-            "scrollX": true
-        }
-    )
+    
+    $(".select-nama").chosen();
+    $(".num").css("color", getRandomColor());
+    
+    
+$('.btn-right').click(function () {
+    var container = $('.grid-status-child');
+    SideScroll(container,'right',25,100,10);
+});  
 
-    
-    
+$('.btn-left').click(function () {
+    var container = $('.grid-status-child');
+    SideScroll(container,'left',25,100,10);
+}); 
   
 });
 
@@ -59,3 +79,20 @@ function openmodal() {
         $('#myInput').trigger('focus')
       })
 }
+
+
+function SideScroll(element,direction,speed,distance,step) {
+    scrollAmount = 0;
+    var slideTimer = setInterval(function(){
+        if(direction == 'left'){
+            element.scrollLeft -= step;
+        } else {
+            element.scrollLeft += step;
+        }
+        scrollAmount += step;
+        if(scrollAmount >= distance){
+            window.clearInterval(slideTimer);
+        }
+    }, speed);
+}
+

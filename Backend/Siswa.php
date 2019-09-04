@@ -12,6 +12,17 @@
 
         header("location:/MoneyManagement1?page=MasterMember");
     }
+    if (isset($_POST['update'])) {
+
+        $nis = $_POST['nis'];
+        $nama = $_POST['nama'];
+        $kelas = $_POST['Kelas'];
+        $jurusan = $_POST['Jurusan'];
+
+        mysqli_query($koneksi,"UPDATE siswa SET NamaSiswa='$nama', Kelas='$kelas',Jurusan='$jurusan' WHERE NIS='$nis'");
+
+        header("location:/MoneyManagement1?page=MasterMember");
+    }
    
     
     function DataSiswa($koneksi)

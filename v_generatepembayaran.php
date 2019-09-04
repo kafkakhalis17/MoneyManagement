@@ -1,15 +1,11 @@
 <div class="page page-hide" id="v_generateform" visibility="close">
-<?php
- $json =formget($koneksi);
- $file = 'backup/form.json';
- file_put_contents($file,$json);
- ?>
+
  <span class="page-title">Generate Pembayaran</span>
     <div class="form-container">
         <form action="Backend/generateform.php" method="post">
             <table class="tab-gen">
                 <tr>
-                    <td><label>Nama Form</label></td>
+                    <td><label>Nama Form</label></td> 
                     <td><input type="text" name="nama" autocomplete="off"></td>
                 </tr>
                 <tr>
@@ -45,3 +41,7 @@
         </form>
     </div>
 </div>
+
+<script>
+    
+</script>
